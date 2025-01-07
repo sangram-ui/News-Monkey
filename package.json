@@ -1,0 +1,22 @@
+{
+  "name": "sagram",
+  "version": "1.0.0",
+  "description": "it is a amazing pakage ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "sangram",
+  "type": "commonjs",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^19.0.6",
+    "chalk": "^5.4.1",
+    "colors": "^1.4.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
