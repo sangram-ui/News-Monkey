@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>News Monkey</title>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="logo">News Monkey</span>
+    <form onsubmit="searchNews(event)">
+      <input type="text" id="search-query" placeholder="Search News"/>
+      <button type="submit" id="search-button">Search</button> <!-- Added Search Button -->
+      <button type="button" id="theme-toggle">
+        <span class="mode-icon">🌙</span>
+      </button>
+    </form>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#" onclick="fetchNews('general')">General</a></li>
+        <li><a href="#" onclick="fetchNews('business')">Business</a></li>
+        <li><a href="#" onclick="fetchNews('sports')">Sports</a></li>
+        <li><a href="#" onclick="fetchNews('technology')">Technology</a></li>
+        <li><a href="#" onclick="fetchNews('health')">Health</a></li>
+        <li><a href="#" onclick="fetchNews('science')">Science</a></li>
+        <li><a href="#" onclick="fetchNews('entertainment')">Entertainment</a></li>
+      </ul>
+    </aside>
+
+    <div class="news-container">
+      <h1>Welcome to News Monkey</h1>
+      <div class="news-articles" id="news-articles"></div>
+      <div class="pagination">
+        <button id="prev" onclick="changePage(-1)">Previous</button>
+        <button id="next" onclick="changePage(1)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
